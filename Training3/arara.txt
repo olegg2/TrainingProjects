@@ -1,0 +1,6 @@
+HourEmployee{id='3', name='q', salary=11.0, monthlySalary=1830.4}
+HourEmployee{id='5', name='q', salary=2.0, monthlySalary=332.8}
+HourEmployee{id='6', name='q', salary=1.0, monthlySalary=166.4}
+FixedEmployee{id='2', name='q', salary=13.0, monthlySalary=13.0}
+FixedEmployee{id='1', name='q', salary=13.0, monthlySalary=13.0}
+FixedEmployee{id='4', name='q', salary=12.0, monthlySalary=12.0}

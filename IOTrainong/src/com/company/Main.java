@@ -15,36 +15,40 @@ public class Main {
 
 
         File file3 = new File("file.txt");
-        File file4 = new File("file4.txt");
+        File file4 = new File("file4.txt");*/
 
         FileReader reader = new FileReader("file.txt");
         FileWriter writer = new FileWriter("fileee.txt");
-       *//* int b;
-        while ((b=reader.read())!=-1){
+        int b;
+      /*  while ((b=reader.read())!=-1){
             System.out.println((char)b+" ");
             writer.write(b);
-        }*//*
+        }*/
 
         BufferedReader br = new BufferedReader(reader);
-       *//* String s;
-        while ((s=br.readLine())!=null){
-            System.out.print(s+" ");
-        }*//*
+        BufferedWriter bw = new BufferedWriter(writer);
+        bw.write("fdssdf");
+        bw.close();
+ //       String s;
+//        while ((s=br.readLine())!=null){
+//            bw.write(s);
+//            System.out.print(s+" ");
+//        }
 
-        Scanner sc = new Scanner(br);
+        /*Scanner sc = new Scanner(br);
 
         while (sc.hasNext()){
             System.out.println(sc.next());
-        }
-*/
-        Scanner scs = new Scanner(new BufferedReader(new FileReader("file2.txt")));
+        }*/
+
+      /*  Scanner scs = new Scanner(new BufferedReader(new FileReader("file2.txt")));
         scs.useLocale(Locale.UK);
         while (scs.hasNext()){
             if(scs.hasNextDouble())
                 System.out.println("lol"+scs.next());
             if(scs.hasNextInt())
             System.out.println("ala"+scs.next());
-        }
+        }*/
 
     }
 }
