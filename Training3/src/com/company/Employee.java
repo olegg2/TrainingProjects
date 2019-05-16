@@ -1,6 +1,8 @@
 package com.company;
 
-public abstract class Employee{
+import java.io.Serializable;
+
+public abstract class Employee implements Serializable{
     public static int idCount;
     protected int id;
     protected String name;

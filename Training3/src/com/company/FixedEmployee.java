@@ -17,17 +17,17 @@ public class FixedEmployee extends Employee {
 
     @Override
     int getId() {
-        return 0;
+        return id;
     }
 
     @Override
     String getName() {
-        return null;
+        return name;
     }
 
     @Override
     double getSalary() {
-        return 0;
+        return salary;
     }
 
     @Override

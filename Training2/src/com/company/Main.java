@@ -36,13 +36,15 @@ public class Main {
 }
 
 abstract class ImplEmployee implements Employee{
-
-    abstract int compareTo(ImplEmployee o);
-
-}  protected String id;
+    protected String id;
     protected String name;
     protected double salary;
     protected double monthlySalary;
+
+    abstract int compareTo(ImplEmployee o);
+
+}
+
 
 class HourEmployee extends ImplEmployee{
     HourEmployee(String id,String name,double salary){
