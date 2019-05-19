@@ -5,7 +5,8 @@ public class Main {
 
 
     public static void main(String[] args) {
-        multipleThreeAndFive(24);
+        System.out.println(findNextSquare(143));
+        //multipleThreeAndFive(24);
         //System.out.println(HighAndLow("12 2 -2 3 4 55 6 123"));
       /*  int[] d={1,2,3,4,2,4};
        int a= equalSides(d);
@@ -16,13 +17,18 @@ public class Main {
     }
 
     public static long findNextSquare(long sq) {
-        int i = 1;
+        double num = Math.sqrt(sq);
+        if((num)%1>0)
+            return -1;
+        else return (long)Math.pow((Math.sqrt(sq)+1),2);
+       /* int i = 1;
         while ((i * i) != sq) {
             i++;
             if (i * i > sq) return -1;
         }
         i++;
-        return i * i;
+        return i * i;*/
+       //return  0;
     }
 
     public static int GetSum(int a, int b) {
