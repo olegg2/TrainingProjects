@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MorseCode {
+
     public static String get(String morseCode){
         Map<String,String> decoder = new HashMap<>();
         char[] english = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
@@ -22,10 +23,10 @@ public class MorseCode {
             decoder.put(morse[i],morse1[i]);
         }
 
-        if(decoder.containsKey(morseCode)){
+            if(decoder.containsKey(morseCode)){
             return decoder.get(morseCode);
-        }
-        else return "-1";
+            }
+            else return "-1";
 
     }
 }

@@ -3,14 +3,22 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        String i = "qwerty";
-        char [] c = i.toCharArray();
-        char [] c2 = new char[i.length()];
+        System.out.print(decode(".... . -.--   .--- ..- -.. ."));
+    }
 
-
-        for (int j = 0; j <i.length() ; j++) {
-            c2[j] = c[i.length()-1-j];
+    public static String decode(String morseCode) {
+        if(!morseCode.contains(" "))
+            return MorseCode.get(morseCode);
+        String[] morse = morseCode.split("   ");
+        String res=new String();
+        for(int i=0;i<morse.length;i++){
+            String[] mor = morse[i].split(" ");
+            for (int j = 0; j <mor.length ; j++) {
+                res+=MorseCode.get(mor[j]);
+            }
+            res+=" ";
         }
-        System.out.println(new String(c2));
+
+        return res.trim();
     }
 }
