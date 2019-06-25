@@ -7,9 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        long [] array =productFib(800);
-       System.out.println(array[0]+" "+array[1]+" "+array[2]);
-
+//        long [] array =productFib(800);
+//       System.out.println(array[0]+" "+array[1]+" "+array[2]);
+//
+       System.out.println( pigIt("mama am gaga"));
 	   /* String text = "I am superman";
         Pattern pattern1 = Pattern.compile("[1-9]");
         Matcher matcher = pattern1.matcher(text);
@@ -17,6 +18,9 @@ public class Main {
             System.out.println(text.substring(matcher.start(),matcher.end()));
         }*/
         //System.out.print();
+    }
+    public static String pigIt(String str) {
+        return str.replaceAll("(\\w)(\\w*)", "$2$1ay");
     }
 
 
